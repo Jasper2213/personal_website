@@ -6,20 +6,36 @@
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/screen.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
     <script src="assets/js/script.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#" class="selected">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="extra/temp.pdf" target="_blank">Resume</a></li>
-        </ul>
-    </nav>
+    <div id="menu-container">
+        <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+
+        <div class="hamburger-icon">
+            <label for="openmenu" id="hamburger-label">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="menu-pane">
+            <nav>
+                <ul class="menu-links">
+                    <li><a href="#" class="selected">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="extra/temp.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
     <div id="introduction">
         <article>
