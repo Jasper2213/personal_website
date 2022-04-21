@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 body {
     font-family: Lato, Arial, sans-serif;
     font-size: 1rem;
@@ -10,7 +14,6 @@ nav ul {
     height: 5rem;
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
 }
@@ -34,9 +37,15 @@ a.selected {
 
 #introduction {
     width: 90%;
-    margin: 2rem auto;
+    height: 100vh;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#introduction article {
+    width: 50%;
 }
 
 #introduction h2 {
@@ -53,5 +62,6 @@ a.selected {
 }
 
 #introduction img {
-    max-width: 40%;
+    width: auto;
+    height: 55%;
 }
