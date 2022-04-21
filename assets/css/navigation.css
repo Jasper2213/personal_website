@@ -1,0 +1,73 @@
+.hamburger-icon {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 2rem;
+}
+
+.hamburger-icon span {
+    height: 5px;
+    width: 40px;
+    background-color: black;
+    display: block;
+    margin: 5px 0 5px 0;
+    transition: 0.7s ease-in-out;
+    transform: none;
+}
+
+div.menu-pane {
+    position: absolute;
+    transform: translateX(-105vw);
+    transform-origin: 0 0;
+    transition: 0.6s ease-in-out;
+    width: 100%;
+}
+
+#openmenu:checked ~ .menu-pane {
+    left: 5vw;
+    transform: translateX(-5vw);
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+    transform: translate(0%, 175%) rotate(-45deg);
+    background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1),
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+    opacity: 0;
+}
+
+.menu-pane ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 5rem;
+    background-color: grey;
+    font-size: 2rem;
+}
+
+.menu-links li {
+    margin-right: 3rem;
+}
+
+.menu-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-links li a:hover {
+    text-decoration: underline;
+}
+
+input.hamburger-checkbox {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+}
