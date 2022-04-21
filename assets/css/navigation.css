@@ -1,3 +1,14 @@
+/**********************************************************/
+/*   Navigation slightly modified from:                   */
+/*   https://codepen.io/ahart814/pen/wvBEQpy?editors=1100 */
+/**********************************************************/
+
+.hamburger-checkbox {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+}
+
 .hamburger-icon {
     position: absolute;
     z-index: 1;
@@ -15,19 +26,6 @@
     transform: none;
 }
 
-div.menu-pane {
-    position: absolute;
-    transform: translateX(-105vw);
-    transform-origin: 0 0;
-    transition: 0.6s ease-in-out;
-    width: 100%;
-}
-
-#openmenu:checked ~ .menu-pane {
-    left: 5vw;
-    transform: translateX(-5vw);
-}
-
 #openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
     transform: translate(0%, 175%) rotate(-45deg);
     background-color: white;
@@ -41,6 +39,19 @@ div.menu-pane {
 #openmenu:checked ~ .hamburger-icon span:nth-of-type(1),
 #openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
     opacity: 0;
+}
+
+#openmenu:checked ~ .menu-pane {
+    left: 5vw;
+    transform: translateX(-5vw);
+}
+
+.menu-pane {
+    position: absolute;
+    transform: translateX(-105vw);
+    transform-origin: 0 0;
+    transition: 0.6s ease-in-out;
+    width: 100%;
 }
 
 .menu-pane ul {
@@ -64,10 +75,4 @@ div.menu-pane {
 
 .menu-links li a:hover {
     text-decoration: underline;
-}
-
-input.hamburger-checkbox {
-    position: absolute;
-    z-index: 3;
-    opacity: 0;
 }
