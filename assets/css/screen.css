@@ -9,7 +9,14 @@ body {
     background-color: lightgray;
 }
 
-nav ul {
+#go-to-top button {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 10;
+    border: none;
+    outline: none;
     background-color: grey;
     height: 5rem;
     text-align: center;
