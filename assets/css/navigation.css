@@ -18,6 +18,10 @@
     opacity: 0;
 }
 
+.hamburger-checkbox:hover {
+    cursor: pointer;
+}
+
 .hamburger-icon {
     position: absolute;
     z-index: 1;
