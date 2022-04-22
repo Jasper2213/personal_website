@@ -47,6 +47,10 @@ body {
     align-items: center;
 }
 
+#home {
+    border-bottom: black solid 3px;
+}
+
 #home article {
     width: 50%;
 }
