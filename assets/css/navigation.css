@@ -3,10 +3,19 @@
 /*   https://codepen.io/ahart814/pen/wvBEQpy?editors=1100 */
 /**********************************************************/
 
+#menu-container {
+    position: sticky;
+    top: 0;
+}
+
 .hamburger-checkbox {
     position: absolute;
     z-index: 3;
+    top: 5vh;
+    left: 5vw;
+    width: 10vw;
     opacity: 0;
+    height: 6vh;
 }
 
 .hamburger-icon {
@@ -23,7 +32,6 @@
     display: block;
     margin: 5px 0 5px 0;
     transition: 0.7s ease-in-out;
-    transform: none;
 }
 
 #openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {

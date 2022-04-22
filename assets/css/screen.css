@@ -42,7 +42,7 @@ a.selected {
     text-decoration: underline;
 }
 
-#introduction {
+#home, #contact {
     width: 90%;
     height: 100vh;
     margin: auto;
@@ -51,24 +51,24 @@ a.selected {
     align-items: center;
 }
 
-#introduction article {
+#home article {
     width: 50%;
 }
 
-#introduction h2 {
+#home h2 {
     font-size: 3rem;
 }
 
-#introduction h1 {
+#home h1 {
    font-size: 2.7rem;
 }
 
-#introduction p {
+#home p {
     font-size: 2rem;
     margin-top: 1rem;
 }
 
-#introduction img {
+#home img {
     width: auto;
     height: 55%;
 }
