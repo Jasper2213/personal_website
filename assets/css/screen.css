@@ -72,3 +72,12 @@ body {
     width: auto;
     height: 55%;
 }
+
+#contact {
+    flex-wrap: wrap;
+}
+
+#contact a img {
+    width: 10rem;
+    height: auto;
+}
