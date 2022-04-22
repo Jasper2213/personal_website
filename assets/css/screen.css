@@ -73,6 +73,39 @@ body {
     height: 55%;
 }
 
+#projects {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.project {
+    width: 40%;
+    min-height: 40%;
+    margin-right: 7rem;
+}
+
+.project h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.project a {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: black;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.project a:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.project p {
+    margin-bottom: 1rem;
+}
+
 #contact a img {
     width: 10rem;
     height: auto;
