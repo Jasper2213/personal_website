@@ -38,7 +38,7 @@ body {
     background-color: white;
 }
 
-#home, #contact {
+#home, #projects, #contact {
     width: 90%;
     height: 100vh;
     margin: auto;
@@ -47,7 +47,7 @@ body {
     align-items: center;
 }
 
-#home {
+#home, #projects {
     border-bottom: black solid 3px;
 }
 
