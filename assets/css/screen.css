@@ -38,7 +38,7 @@ body {
     background-color: white;
 }
 
-#home, #projects, #contact {
+#home, #contact {
     width: 90%;
     height: 100vh;
     margin: auto;
@@ -74,15 +74,21 @@ body {
 }
 
 #projects {
+    width: 90%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    margin: auto;
     min-height: 100vh;
 }
 
 .project {
-    width: 40%;
-    height: 80%;
-    margin-right: 7rem;
+    width: 42%;
+    height: 40rem;
+    border-radius: 10px;
+    border: dotted black 3px;
+    padding: 2rem;
 }
 
 .project h2 {
@@ -94,7 +100,7 @@ body {
     font-size: 1.8rem;
     font-style: italic;
     color: black;
-    display: block;
+    display: inline-block;
     margin-bottom: 0.5rem;
 }
 
