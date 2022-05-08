@@ -98,8 +98,8 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.project a:last-of-type {
-    margin-bottom: 1rem;
+.project a:first-of-type {
+    margin-right: 1rem;
 }
 
 .project p {
