@@ -89,6 +89,7 @@ body {
     border-radius: 10px;
     border: dotted black 3px;
     padding: 2rem;
+    margin: 2rem 0;
 }
 
 .project h2 {
