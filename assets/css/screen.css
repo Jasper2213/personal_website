@@ -85,7 +85,7 @@ body {
 
 .project {
     width: 42%;
-    height: 40rem;
+    min-height: 40rem;
     border-radius: 10px;
     border: dotted black 3px;
     padding: 2rem;
